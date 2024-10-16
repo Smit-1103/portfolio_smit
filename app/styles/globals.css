@@ -1,0 +1,93 @@
+/* src/app/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  @apply bg-gray-50 text-gray-900;
+  font-family: 'Inter', sans-serif; /* Optional: Import a Google font like Inter */
+}
+
+a {
+  @apply transition duration-300 ease-in-out;
+}
+
+a:hover {
+  @apply text-blue-600;
+}
+
+button {
+  @apply focus:outline-none;
+}
+
+img {
+  @apply rounded-full object-cover;
+}
+
+/* Header Styles */
+header {
+  @apply bg-white shadow-md sticky top-0 z-50 transition duration-300 ease-in-out;
+}
+
+header a {
+  @apply text-lg font-medium text-gray-700 hover:text-blue-600;
+}
+
+header a:hover {
+  @apply font-semibold;
+}
+
+/* Hero Section Styles */
+#hero {
+  @apply h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-blue-50 to-white;
+}
+
+#hero img {
+  @apply w-32 h-32 md:w-48 md:h-48 rounded-full shadow-lg;
+}
+
+#hero h1 {
+  @apply text-4xl md:text-6xl font-bold mt-4;
+}
+
+#hero p {
+  @apply mt-2 text-lg md:text-xl text-gray-600;
+}
+
+#hero button {
+  @apply mt-6 px-6 py-2 bg-blue-500 text-white font-semibold rounded-md shadow-md transition transform hover:scale-105;
+}
+
+/* Section Titles */
+section h2 {
+  @apply text-3xl md:text-4xl font-bold text-center my-8 text-gray-800;
+}
+
+/* Footer Styles */
+footer {
+  @apply bg-gray-900 py-6;
+}
+
+footer p {
+  @apply text-sm text-gray-400;
+}
+
+footer a {
+  @apply text-gray-400 hover:text-white transition duration-300 ease-in-out;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  header nav {
+    @apply justify-between px-10;
+  }
+
+  #hero {
+    @apply bg-gradient-to-r from-blue-50 via-white to-gray-50;
+  }
+
+  #hero img {
+    @apply w-48 h-48;
+  }
+}
