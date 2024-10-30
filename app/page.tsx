@@ -217,8 +217,9 @@ const HomePage = () => {
               <section id="skills">
                 <div className="flex min-h-0 flex-col gap-y-3">
                   <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                    {['Dart', 'Java', 'Android', 'SASS', 'MySQL', 'PostgreSQL', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Node.js', 'gitHub'].map((skill, id) => (
-                      <div key={skill} className="bg-black text-white px-4 py-2 rounded-full">
+                    {['C', 'Java', 'Python', 'JavaScript', 'Dart', 'MySQL', 'PostgreSQL', 'HTML', 'CSS', 'SCSS', 'SASS', 'RESTful APIs', 'React', 'Flutter', 'Android', 'AWS', 'Microsoft Office', 'Visual Studio', 'Git', 'Firebase', 'Sublime Text', 'IntelliJ']
+.map((skill, id) => (
+                      <div key={skill} className="bg-black text-white px-2 py-1 rounded-full">
                         {skill}
                       </div>
                     ))}
