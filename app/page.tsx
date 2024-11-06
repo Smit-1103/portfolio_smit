@@ -80,6 +80,8 @@ const HomePage = () => {
         </span>
         <RetroGrid />
       </div>
+
+      {/* Projects Section */}
       <section id="projects" className="py-12 bg-white">
         <div className="container mx-auto px-6"><GradualSpacing
           className="font-display text-center text-4xl font-bold -tracking-widest  text-black dark:text-white md:text-4xl md:leading-[5rem] py-4"
@@ -93,7 +95,7 @@ const HomePage = () => {
                 period: "July 2024 - August 2024",
                 description:
 
-                "This project utilizes advanced data structures and algorithms, including Boyer-Moore, Edit Distance, and self-balancing trees, for tasks like web crawling, spell checking, and product sorting, with added features for URL extraction and car rental price analysis.",                
+                  "This project utilizes advanced data structures and algorithms, including Boyer-Moore, Edit Distance, and self-balancing trees, for tasks like web crawling, spell checking, and product sorting, with added features for URL extraction and car rental price analysis.",
                 tags: ["Java", "Data Structures", "Algorithms", "CSV", "Graphing"],
                 githubLink: "https://github.com/Smit-1103/CarRentalPriceAnalysis/blob/main/README.md",
                 videoSrc: "https://github.com/user-attachments/assets/4ac62e0f-30ec-449a-9be5-2636828488e7", // Update with your video path
@@ -187,6 +189,19 @@ const HomePage = () => {
               </ShineBorder>
             ))}
           </div>
+          <div className="flex justify-center mt-8">
+  <a
+    href="https://github.com/Smit-1103?tab=repositories"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <ShimmerButton className="shadow-lg">
+      <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+        See My All Projects
+      </span>
+    </ShimmerButton>
+  </a>
+</div>
         </div>
       </section>
 
@@ -217,12 +232,12 @@ const HomePage = () => {
               <section id="skills">
                 <div className="flex min-h-0 flex-col gap-y-3">
                   <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                    {['C', 'Java', 'Python', 'JavaScript', 'Dart', 'MySQL', 'PostgreSQL', 'HTML', 'CSS', 'SCSS', 'SASS', 'RESTful APIs', 'React', 'Flutter', 'Android', 'AWS', 'Microsoft Office', 'Visual Studio', 'Git', 'Firebase', 'Sublime Text', 'IntelliJ']
-.map((skill, id) => (
-                      <div key={skill} className="bg-black text-white px-2 py-1 rounded-full">
-                        {skill}
-                      </div>
-                    ))}
+                    {['C', 'Java', 'Python', 'JavaScript', 'Dart', 'MySQL', 'PostgreSQL', 'Apache kafka', 'AWS lambda', 'HTML', 'CSS', 'SCSS', 'SASS', 'RESTful APIs', 'React', 'Flutter', 'Android', 'Amazon S3', 'Microsoft Office', 'Visual Studio', 'Git', 'Firebase', 'Sublime Text', 'IntelliJ']
+                      .map((skill, id) => (
+                        <div key={skill} className="bg-black text-white px-2 py-1 rounded-full">
+                          {skill}
+                        </div>
+                      ))}
                   </div>
                 </div>
               </section>
